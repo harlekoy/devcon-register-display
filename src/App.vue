@@ -1,14 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="bg-gradient p-3 flex">
+      <div class="flex-1 flex items-center">
+        <h1 class="text-white ml-12">Checked-in Summit Participants</h1>
+      </div>
+      <div class="mr-12">
+        <img class="h-16" src="@/assets/line_white.png" alt="">
+      </div>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+@import 'assets/styles/tailwind.postcss';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
